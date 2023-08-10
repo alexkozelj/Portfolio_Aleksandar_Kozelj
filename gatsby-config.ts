@@ -8,21 +8,43 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emilia-core/gatsby-config.mjs
-    siteTitle: `Emilia`,
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
-    siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
+    siteTitle: `Aleksandar Koželj Portfolio`,
+    siteTitleAlt: `Aleksandar Koželj Portfolio`,
+    siteHeadline: `Aleksandar Koželj Portfolio`,
     siteUrl: `https://emilia.lekoarts.de`,
-    siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
+    siteDescription: `Aleksandar Koželj Portfolio`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `Aleksandar Koželj`,
   },
   trailingSlash: `never`,
+  pathPrefix: `/Portfolio-Aleksandar-Kozelj`,
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+
+        name: `Aleksandar Koželj`,
+        location: `Frankfurt am Main, Germany`,
+        
+        showThemeAuthor: false,
+        socialMedia: [
+          {
+            title: `Resume`,
+            href: `https://aleksandarkozelj.s3.eu-north-1.amazonaws.com/CV-Aleksandar-Kozelj.pdf`
+          },
+          {
+            title: `Github`,
+            href: `https://github.com/alexkozelj`
+          },
+          {
+            title: `LinkedIn`,
+            href: `https://www.linkedin.com/in/aleksandar-kozelj/`
+          }
+        ]
+      
+      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -37,7 +59,7 @@ const config: GatsbyConfig = {
         short_name: `Emilia`,
         description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
         start_url: `/`,
-        background_color: `#fff`,
+        background_color: `#858282`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#3182ce`,
