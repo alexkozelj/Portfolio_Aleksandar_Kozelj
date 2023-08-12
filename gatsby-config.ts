@@ -32,7 +32,7 @@ const config: GatsbyConfig = {
         socialMedia: [
           {
             title: `Resume`,
-            href: `https://aleksandarkozelj.s3.eu-north-1.amazonaws.com/CV-Aleksandar-Kozelj.pdf`
+            href: `https://aleksandarkozelj.s3.eu-north-1.amazonaws.com/Resume-Aleksandar-Kozelj.pdf`
           },
           {
             title: `Github`,
